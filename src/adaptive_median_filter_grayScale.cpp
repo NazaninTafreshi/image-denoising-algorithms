@@ -76,7 +76,7 @@ Mat adaptiveMedianFilter(Mat &in_image, int smax) {
 int main()
 {
     //in_image for adaptive median filter
-    Mat in_image = imread("noisyImage.jpg", 0);
+    Mat in_image = imread("noisyImageGrayScale.jpg", 0);
     imshow("in_image", in_image);
     
     Mat out_image = adaptiveMedianFilter(in_image, 9);
